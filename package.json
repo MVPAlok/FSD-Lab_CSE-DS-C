@@ -1,0 +1,12 @@
+{
+  "name": "backend-main",
+  "version": "1.0.0",
+  "description": "Backend main project for FSD Lab",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
