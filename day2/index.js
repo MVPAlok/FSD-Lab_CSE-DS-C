@@ -1,35 +1,31 @@
-import fs, { read, write } from 'fs';
-// console.log(fs);
+import fs from 'fs';
 
-
-
-const writeFileSync = ()=>{
-    try{
-        fs.writeFileSync(path,data);
-        console.log("DAta has been written successfully");
+const writeFileSync = (path, data) => {
+    try {
+        fs.writeFileSync(path, data);
+        console.log("Data has been written successfully");
+    } catch (error) {
+        console.log("Error while writing data:", error);
     }
-    catch(error){
-        console.log("Error while writing data:",err);
-    }
-}
-const readFileSync = (path)=>{
-    try{
-        const data = fs.readFileSync(path,"utf-8");
+};
+
+const readFileSync = (path) => {
+    try {
+        const data = fs.readFileSync(path, "utf-8");
         console.log(data);
+    } catch (error) {
+        console.log("Error while reading data:", error);
+    }
+};
 
-    }
-    catch(error){
-        console.log("Error while reading data:",err);
-    }
-}
-const appendFileSync = (path,data)=>{
-    try{
-        fs.appendFileSync(path,data);
+const appendFileSync = (path, data) => {
+    try {
+        fs.appendFileSync(path, data);
         console.log("Data has been appended successfully");
-    }catch(error){
-        console.log("Error while appending data:",err);
+    } catch (error) {
+        console.log("Error while appending data:", error);
     }
-}
+};
 console.log("Before writing data");
 writeFileSync("./example.txt","This data is written thriugh sync fun:'writeFileSync'");
 console.log("After writing data");

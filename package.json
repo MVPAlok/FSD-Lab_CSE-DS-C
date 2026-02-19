@@ -1,12 +1,16 @@
 {
   "name": "backend-main",
   "version": "1.0.0",
-  "description": "Backend main project for FSD Lab",
-  "main": "index.js",
+  "description": "FSD Lab - Backend with Login System",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.21.0"
+  }
 }

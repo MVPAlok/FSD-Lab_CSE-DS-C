@@ -1,0 +1,61 @@
+[{
+  "id": 1,
+  "first_name": "Serge",
+  "last_name": "McKellen",
+  "email": "smckellen0@macromedia.com",
+  "gender": "Male"
+}, {
+  "id": 2,
+  "first_name": "Ertha",
+  "last_name": "Broscombe",
+  "email": "ebroscombe1@about.com",
+  "gender": "Female"
+}, {
+  "id": 3,
+  "first_name": "Skipper",
+  "last_name": "Lightfoot",
+  "email": "slightfoot2@bloglines.com",
+  "gender": "Male"
+}, {
+  "id": 4,
+  "first_name": "Elysia",
+  "last_name": "Ilive",
+  "email": "eilive3@prweb.com",
+  "gender": "Female"
+}, {
+  "id": 5,
+  "first_name": "Diane-marie",
+  "last_name": "Devorill",
+  "email": "ddevorill4@cargocollective.com",
+  "gender": "Female"
+}, {
+  "id": 6,
+  "first_name": "Consuelo",
+  "last_name": "Ferrieres",
+  "email": "cferrieres5@surveymonkey.com",
+  "gender": "Female"
+}, {
+  "id": 7,
+  "first_name": "Dru",
+  "last_name": "Paffley",
+  "email": "dpaffley6@discovery.com",
+  "gender": "Male"
+}, {
+  "id": 8,
+  "first_name": "Alford",
+  "last_name": "Foat",
+  "email": "afoat7@unc.edu",
+  "gender": "Male"
+}, {
+  "id": 9,
+  "first_name": "Angelo",
+  "last_name": "Casaccio",
+  "email": "acasaccio8@google.it",
+  "gender": "Male"
+}, {
+  "id": 10,
+  "first_name": "Patsy",
+  "last_name": "Bassil",
+  "email": "pbassil9@facebook.com",
+  "gender": "Non-binary"
+}]

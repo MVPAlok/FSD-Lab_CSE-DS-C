@@ -1,5 +1,3 @@
-import { read } from 'fs';
-import fs from 'fs/promises';
 import fs from 'fs/promises';
 const write = async(path,data )=>{
     try{

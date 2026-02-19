@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - FSD Lab</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="auth-container">
+    <!-- Login Form -->
+    <div class="auth-card" id="loginCard">
+      <h1>Welcome Back</h1>
+      <p class="subtitle">Sign in to your account</p>
+
+      <div class="message" id="loginMsg"></div>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required />
+        </div>
+        <button type="submit" class="btn" id="loginBtn">Sign In</button>
+      </form>
+
+      <div class="auth-links">
+        Don't have an account? <a href="register.html">Register</a>
+      </div>
+    </div>
+
+    <!-- Dashboard (shown after login) -->
+    <div class="auth-card dashboard" id="dashboard">
+      <h2>Welcome, <span class="welcome-name" id="userName"></span>!</h2>
+      <p>You are logged in successfully.</p>
+
+      <div class="user-info">
+        <div><span>Name:</span> <span id="dashName"></span></div>
+        <div><span>Email:</span> <span id="dashEmail"></span></div>
+      </div>
+
+      <button class="btn btn-logout" id="logoutBtn">Logout</button>
+    </div>
+  </div>
+
+  <script src="js/login.js"></script>
+</body>
+</html>

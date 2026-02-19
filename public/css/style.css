@@ -1,0 +1,206 @@
+/* ===== CSS Variables ===== */
+:root {
+  --primary: #4f46e5;
+  --primary-hover: #4338ca;
+  --bg: #f1f5f9;
+  --card: #ffffff;
+  --text: #1e293b;
+  --text-light: #64748b;
+  --border: #e2e8f0;
+  --success: #22c55e;
+  --error: #ef4444;
+  --radius: 12px;
+}
+
+/* ===== Reset ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== Auth Container ===== */
+.auth-container {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+}
+
+.auth-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 40px 32px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.auth-card h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.auth-card p.subtitle {
+  color: var(--text-light);
+  text-align: center;
+  margin-bottom: 28px;
+  font-size: 15px;
+}
+
+/* ===== Form ===== */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.2s;
+  outline: none;
+  background: #f8fafc;
+}
+
+.form-group input:focus {
+  border-color: var(--primary);
+  background: #fff;
+}
+
+.btn {
+  width: 100%;
+  padding: 13px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 6px;
+}
+
+.btn:hover {
+  background: var(--primary-hover);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ===== Message ===== */
+.message {
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 16px;
+  display: none;
+  text-align: center;
+  font-weight: 500;
+}
+
+.message.success {
+  display: block;
+  background: #f0fdf4;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+}
+
+.message.error {
+  display: block;
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+/* ===== Links ===== */
+.auth-links {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+.auth-links a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-links a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Dashboard ===== */
+.dashboard {
+  display: none;
+  text-align: center;
+}
+
+.dashboard h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.dashboard .welcome-name {
+  color: var(--primary);
+}
+
+.dashboard p {
+  color: var(--text-light);
+  margin-bottom: 24px;
+}
+
+.dashboard .user-info {
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.dashboard .user-info div {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+
+.dashboard .user-info div:last-child {
+  border-bottom: none;
+}
+
+.dashboard .user-info span {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.btn-logout {
+  background: var(--error);
+}
+
+.btn-logout:hover {
+  background: #dc2626;
+}
